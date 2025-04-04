@@ -3,23 +3,29 @@
 <head>
     <title>Részvételi Információk</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        .container { border: 1px solid #ccc; padding: 20px; border-radius: 5px; max-width: 400px; margin: auto; text-align: center; }
-        h1 { color: #333; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-        th { background-color: #f2f2f2; }
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f8f9fa; }
+        .container { 
+            border: 2px solid #444; padding: 20px; border-radius: 10px; 
+            max-width: 450px; margin: auto; text-align: center; 
+            background: #ffffff; box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+        }
+        h1 { color: #007bff; font-size: 24px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; border-radius: 8px; overflow: hidden; }
+        th, td { padding: 10px; text-align: left; }
+        th { background: #007bff; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        tr:hover { background-color: #ddd; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1 id="name"></h1>
         <table>
-            <tr><th> - </th><th>Adatok</th></tr>
-            <tr><td>Program</td><td id="program"></td></tr>
-            <tr><td>OEE</td><td id="oee"></td></tr>
-            <tr><td>Vegetáriánus</td><td id="vega"></td></tr>
-            <tr><td>Ételallergia</td><td id="allergy"></td></tr>
+            <tr><th>Kategória</th><th>Adatok</th></tr>
+            <tr><td><strong>Program</strong></td><td id="program"></td></tr>
+            <tr><td><strong>OEE</strong></td><td id="oee"></td></tr>
+            <tr><td><strong>Vegetáriánus</strong></td><td id="vega"></td></tr>
+            <tr><td><strong>Ételallergia</strong></td><td id="allergy"></td></tr>
         </table>
     </div>
 

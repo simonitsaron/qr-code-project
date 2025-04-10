@@ -21,11 +21,12 @@
     <div class="container">
         <h1 id="name"></h1>
         <table>
-            <tr><th>Kategória</th><th>Adatok</th></tr>
+            <tr><th>Kategória</th><th>Információk</th></tr>
             <tr><td><strong>Program</strong></td><td id="program"></td></tr>
             <tr><td><strong>OEE</strong></td><td id="oee"></td></tr>
             <tr><td><strong>Vegetáriánus</strong></td><td id="vega"></td></tr>
             <tr><td><strong>Ételallergia</strong></td><td id="allergy"></td></tr>
+            <tr><td><strong>Vándorgyűlés</strong></td><td id="vandor"></td></tr>
         </table>
     </div>
 
@@ -37,6 +38,7 @@
         const oee = urlParams.get('oee');
         const vega = urlParams.get('vega');
         const allergy = urlParams.get('allergy');
+        const vandor = urlParams.get('vandor');
 
         // Beállítjuk az oldal tartalmát az adatokkal
         document.getElementById('name').textContent = name;
@@ -44,6 +46,7 @@
         document.getElementById('oee').textContent = oee;
         document.getElementById('vega').textContent = vega;
         document.getElementById('allergy').textContent = allergy;
+        document.getElementById('vandor').textContent = vandor;
     </script>
 </body>
 </html>
